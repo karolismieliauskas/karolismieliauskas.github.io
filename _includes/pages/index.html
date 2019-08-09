@@ -18,21 +18,6 @@
 
           {{ keys.intro.body | markdownify }}
 
-          <figure class="map">
-            <figcaption class="map__details">
-              <ol class="map__steps">
-                {% for step in site.data.map.steps %}
-                  <li class="map__step" data-mark="{{ step.temp }}">
-                    <h5 class="map__label">{{ step.title }}</h5>
-                    <p class="map__body">{{ step.body }}</p>
-                  </li>
-                {% endfor %}
-              </ol>
-            </figcaption>
-            {% include svg/map.svg %}
-          </figure>
-
-
           <aside class="sidebar">
             {% assign body = keys.banner.body | markdownify %}
             {% include components/banner.html
@@ -47,6 +32,15 @@
         </section>
     </article>
 
+    <article class="article">
+      <section class="article__body">
+        <h1 class="article__title">
+          {{ keys.plan.title }}
+        </h1>
+
+        {{ keys.plan.body | markdownify }}
+      </section>
+    </article>
 
     <article class="article">
       <section class="article__body">
