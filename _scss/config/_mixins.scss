@@ -188,3 +188,10 @@
     }
   }
 }
+
+@mixin glass($color: $color-bg-secondary) {
+  background: rgba($color, 0.85);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

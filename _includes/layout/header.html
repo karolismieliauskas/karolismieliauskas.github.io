@@ -18,9 +18,9 @@
             {% assign home = "" %}
           {% endif %}
           <a class="header__logo brand__logo" href="{{ root }}/{{ home }}">
-            {{ keys.title | replace: " ", "<br>" }}
+            {% include svg/logo.svg %}
           </a>
-          <a class="brand__tab" href="{{ switch_lang }}">{{ keys.translate }} &rarr;</a>
+          <!-- <a class="brand__tab" href="{{ switch_lang }}">{{ keys.translate }} &rarr;</a> -->
         </span>
       </figure>
 

@@ -20,7 +20,7 @@ $input-theme: $color-palette-primary;
 
   border: 1px solid $color-ui-details;
   border-radius: $input-border-radius;
-  box-shadow: $input-shadow;
+  background-color: rgba($input-theme, 0.05);
 
   &:focus {
     border-color: $input-theme;

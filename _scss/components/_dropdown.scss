@@ -6,19 +6,17 @@
   opacity: 0.8;
 
   @include phablet() {
+    @include glass();
+
     position: absolute;
     top: -1000px;
     left: -1rem;
 
-    background: rgba(#fff, 0.9);
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.20);
     border-radius: 0 0 5px 5px;
     list-style: none;
     border-bottom: 0;
     border-top: 0;
 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     opacity: 1;
 
     text-align: left;
