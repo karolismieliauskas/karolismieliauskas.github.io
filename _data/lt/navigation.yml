@@ -16,10 +16,6 @@ items:
         subtitle: Vilnius - Vladivostokas 11000 km
         description: Vilnius - Vladivostokas 11000 km
         id: vladivostok
-      - name: Kelionė į dykumą
-        subtitle: 5000 km Maroke
-        description: 5000 km Maroke
-        id: morocco
   - name: Padėk įgyvendinti
     url: /lt/get-involved.html
 

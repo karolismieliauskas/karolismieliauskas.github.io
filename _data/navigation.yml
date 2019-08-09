@@ -16,10 +16,6 @@ items:
         subtitle: Magic '1000 km a day' ride
         description: Magic '1000 km a day' ride
         id: vladivostok
-      - name: 5000 km in Morocco
-        subtitle: Ride to the desert
-        description: Ride to the desert
-        id: morocco
 
   - name: Get Involved
     url: /get-involved.html
