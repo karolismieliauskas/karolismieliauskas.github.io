@@ -8,6 +8,10 @@ items:
     url: /lt/about-karolis.html
   - name: Ankstesnės kelionės
     items:
+      - name: "Šalčiausia kelionė"
+        subtitle: Motociklu į šalčiausią gyvenama vietą
+        description: Motociklu į šalčiausią gyvenama vietą
+        id: yakutsk
       - name: Kelionė ledu
         subtitle: Per užšalusį Baikalą
         description: Per užšalusį Baikalą

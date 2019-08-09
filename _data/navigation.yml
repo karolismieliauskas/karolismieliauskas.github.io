@@ -8,6 +8,10 @@ items:
     url: /about-karolis.html
   - name: Previous Adventures
     items:
+      - name: The Coldest Ride
+        subtitle: Reaching coldest spot on Earth
+        description: Reaching coldest spot on Earth
+        id: yakutsk
       - name: Across the frozen lake Baikal
         subtitle: Ride on the ice
         description: Ride on the ice
