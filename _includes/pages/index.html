@@ -19,14 +19,7 @@
           {{ keys.intro.body | markdownify }}
 
           <aside class="sidebar">
-            {% assign body = keys.banner.body | markdownify %}
-            {% include components/banner.html
-                       aside=true
-                       title=keys.banner.title
-                       body=body
-                       cta=keys.banner.action
-                       href="get-involved.html" %}
-
+            {% include svg/logo.svg class="sidebar__logo" %}
             {% include partners.html %}
           </aside>
         </section>

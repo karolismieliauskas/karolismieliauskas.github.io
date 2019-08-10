@@ -22,14 +22,24 @@ $header-brand-height: 2rem;
 }
 
 .header__logo {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: -25%;
+  display: inline-block;
+  padding: 1rem 0;
 
-  vertical-align: middle;
-  color: $color-text-primary;
   text-decoration: none;
+  color: $color-text-primary;
+
+  @include phablet() {
+    font-size: 1.5em;
+  }
+}
+
+.header__title {
+  display: block;
+}
+
+.header__subtitle {
+  font-size: 0.65em;
+  opacity: 0.5;
 }
 
 .header__content {

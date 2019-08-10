@@ -1,8 +1,9 @@
-title: Karolis Mieliauskas.
+title: Karolis Mieliauskas
+subtitle: Kelionės motociklu
 menu_toggle: Susipažink
 translate: English
 items:
-  - name: Apie kelionę
+  - name: Sekanti kelionė
     url: /lt/index.html
   - name: Apie mane
     url: /lt/about-karolis.html
