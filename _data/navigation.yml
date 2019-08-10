@@ -22,6 +22,6 @@ items:
         description: Magic '1000 km a day' ride
         id: vladivostok
 
-  - name: Get Involved
-    url: /get-involved.html
+  - name: Get in touch
+    url: /get-in-touch.html
 
