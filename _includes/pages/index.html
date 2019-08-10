@@ -5,13 +5,15 @@
 {% include layout/hero.html
            theme=page.namespace
            title=keys.hero.title
-           subtitle=keys.hero.subtitle %}
+           subtitle="" %}
 
 <div class="bg">
   <div class="container">
     <article class="article">
       <section class="article__section">
         <section class="article__body">
+          <p>{{ keys.hero.subtitle }}</p>
+
           <h1 class="article__title">
             {{ keys.intro.title }}
           </h1>
