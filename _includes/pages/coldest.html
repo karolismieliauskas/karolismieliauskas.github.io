@@ -1,7 +1,6 @@
 {% include keys.html %}
 
 {% include layout/hero.html
-           centered=true
            theme=page.namespace
            title=keys.hero.title
            subtitle="" %}
@@ -10,8 +9,24 @@
   <div class="container">
     <article class="article">
       <section class="article__section">
-        <div class="article__body article__body--centered">
-          {{ keys.body | markdownify }}
+        <div class="article__body">
+          {% capture banner %}
+            </p>
+            <aside class="sidebar">
+              <section class="partners partners--{{page.namespace}}">
+                <p class="partners__body">
+                  {{ keys.partners.body }}
+                </p>
+                <figure class="partners__logos">
+                  {% for link in site.data.partners[page.namespace].links %}
+                    <a class="partners__link" href="{{ link }}"></a>
+                  {% endfor %}
+                </figure>
+              </section>
+            </aside>
+          {% endcapture %}
+
+          {{ keys.body | markdownify | replace_first: "</p>", banner }}
         </div>
       </section>
 
