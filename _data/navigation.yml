@@ -9,6 +9,10 @@ items:
     url: /about-karolis.html
   - name: Previous Adventures
     items:
+      - name: Around the World in 40 days!
+        subtitle: 40 days, 18779km, 1 tyre, 1 oil change
+        description: 40 days, 18779km, 1 tyre, 1 oil change
+        id: world
       - name: The Coldest Ride
         subtitle: Reaching coldest spot on Earth
         description: Reaching coldest spot on Earth

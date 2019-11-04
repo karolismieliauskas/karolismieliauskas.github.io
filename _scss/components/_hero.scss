@@ -36,6 +36,12 @@
   }
 }
 
+.hero--world {
+  &:before {
+    background-image: url(/images/adventures/world/1.jpg);
+  }
+}
+
 .hero--coldest {
   &:before {
     background-image: url(/images/adventures/coldest/1.jpg);

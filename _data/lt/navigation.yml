@@ -9,6 +9,10 @@ items:
     url: /lt/about-karolis.html
   - name: Ankstesnės kelionės
     items:
+      - name: Aplink Pasaulį per 40 dienų!
+        subtitle: 40 dienų, 18779km, 1 padanga, 1 tepelų keitimas
+        description: Motociklu į šalčiausią gyvenama vietą
+        id: world
       - name: "Šalčiausia kelionė"
         subtitle: Motociklu į šalčiausią gyvenama vietą
         description: Motociklu į šalčiausią gyvenama vietą
