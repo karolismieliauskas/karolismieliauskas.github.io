@@ -1,23 +1,25 @@
 {% include i18n.html %}
 {% assign keys = i18n.footer %}
 
-<section class="footer">
-  <div class="container">
-    <header class="footer__header">
-      <h2 class="footer__title">
-        {{ keys.title }}
-      </h2>
-      <p class="footer__subtitle">
-        {{ keys.subtitle }}
-      </p>
+{% unless page.no_footer %}
+  <section class="footer">
+    <div class="container">
+      <header class="footer__header">
+        <h2 class="footer__title">
+          {{ keys.title }}
+        </h2>
+        <p class="footer__subtitle">
+          {{ keys.subtitle }}
+        </p>
 
-      {% include menus/social.html %}
-    </header>
+        {% include menus/social.html %}
+      </header>
 
-    <aside class="footer__meta flag">
-      <strong>{{ keys.meta.title }}</strong>
-      <br class="phone-only">
-      {{ keys.meta.subtitle }}
-    </aside>
-  </div>
-</section>
+      <aside class="footer__meta flag">
+        <strong>{{ keys.meta.title }}</strong>
+        <br class="phone-only">
+        {{ keys.meta.subtitle }}
+      </aside>
+    </div>
+  </section>
+{% endunless %}

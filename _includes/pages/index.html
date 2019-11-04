@@ -3,6 +3,7 @@
 {% include i18n.html %}
 
 {% include layout/hero.html
+           centered=true
            theme=page.namespace
            title=keys.hero.title
            subtitle="" %}
@@ -11,58 +12,19 @@
   <div class="container">
     <article class="article">
       <section class="article__section">
-        <section class="article__body">
-          <p>{{ keys.hero.subtitle }}</p>
+        <section class="article__body article__body--centered">
+          {{ keys.hero.subtitle | markdownify }}
 
           <h1 class="article__title">
             {{ keys.intro.title }}
           </h1>
 
           {{ keys.intro.body | markdownify }}
-
-          <aside class="sidebar">
-            {% include svg/logo.svg class="sidebar__logo" %}
-            {% include partners.html %}
-          </aside>
         </section>
-    </article>
 
-    <article class="article">
-      <section class="article__body">
-        <h1 class="article__title">
-          {{ keys.plan.title }}
-        </h1>
-
-        {{ keys.plan.body | markdownify }}
-      </section>
-    </article>
-
-    <article class="article">
-      <section class="article__body">
-        <h1 class="article__title">
-          {{ keys.rider.title }}
-        </h1>
-
-        {{ keys.rider.body | markdownify }}
-      </section>
-
-      <section class="grid">
-        {% assign keys = i18n.navigation %}
-        {% for item in keys.items %}
-          {% if item.items %}
-            {% for subitem in item.items %}
-              <a href="{{ root }}/adventures/{{ subitem.id }}.html" class="media">
-                <img class="media__image" src="/images/adventures/{{ subitem.id }}/thumb.jpg" alt="">
-                <div class="media__caption">
-                  <h4>{{ subitem.name }}</h4>
-                  <p>{{ subitem.description }}</p>
-                </div>
-              </a>
-            {% endfor %}
-          {% endif %}
-          </li>
-        {% endfor %}
-      </section>
+        <section class="article__body article__body--centered">
+          {% include menus/social.html %}
+        </section>
     </article>
   </div>
 </div>
